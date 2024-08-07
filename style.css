@@ -3,6 +3,55 @@
     margin: 0;
     box-sizing: border-box;
 }
+.navbar {
+  width: 100%;
+}
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.column1 input {
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  text-align: left;
+  font-size: x-large;
+  padding-right: 200px;
+  padding:8px;
+}
+.column1 a {
+  display: flex;
+  float: left;
+  padding: 10px;
+  text-decoration: none;
+  font-size: x-large;
+  color: black;
+  justify-content: space-around;
+}
+
+.column1 button {
+  color: gray;
+  border: blueviolet;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+  padding: 8px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.button:hover {
+  transition: 0.2s;
+  color: black;
+  background-color: gray;
+}
+
+@media screen and (max-width: 700px) {
+  .column1 {
+    width: 100%;
+  }
+  .column1 a{
+    font-size: xx-large;
+  }
+}
 
 .main {
     width: 100%;
@@ -10,11 +59,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 0px 60px 0px;
+
 }
 
 h1 {
-    margin: 10px 0px 30px 0px;
+    
     font-family: cursive;
     color: rgb(0, 6, 90);
     font-size: 50px;
